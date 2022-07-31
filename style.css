@@ -626,7 +626,7 @@ img{
 .blog-post .blog-info{
   background: var(--background-dark-80);
   padding: 20px;
-  border-radius: 10px;
+  /* border-radius: 10px 0 10px 0; */
 }
 
 .blog-post .publish-date{
@@ -828,6 +828,10 @@ img{
   }
   .contact-info{
     grid-template-columns: 1fr; 
+  }
+
+  .resume-row .grid-item .divider{
+    display: none;
   }
 }
 

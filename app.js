@@ -48,3 +48,10 @@ for (let i = 0; i < navItemLinks.length; i++) {
 //     }
 //   });
 // }
+
+// window.addEventListener('click', function (e) {
+//   if (e.target != menuToggler && e.target != sideBar) {
+//     menuToggler.classList.remove('active');
+//     sideBar.classList.add('hidden');
+//   }
+// });
