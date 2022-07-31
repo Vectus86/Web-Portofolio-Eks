@@ -127,7 +127,7 @@ img{
 
 .container {
   position: relative;
-  max-width: 1440px;
+  /* max-width: 1440px; */
   height: 100vh;
   margin: auto;
   overflow: hidden;
@@ -167,7 +167,7 @@ img{
   cursor: pointer;
 }
 
-.side-bar {
+.side-bar{
   position: absolute;
   width: 160px;
   height: 100%;
@@ -177,6 +177,10 @@ img{
   overflow-y: auto;
   display: table;
   z-index: 50;
+}
+
+.side-bar #hide-menu{
+  display: none;
 }
 
 .side-bar .brand-img {

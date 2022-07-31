@@ -49,9 +49,17 @@ for (let i = 0; i < navItemLinks.length; i++) {
 //   });
 // }
 
-// window.addEventListener('click', function (e) {
-//   if (e.target != menuToggler && e.target != sideBar) {
-//     menuToggler.classList.remove('active');
-//     sideBar.classList.add('hidden');
-//   }
-// });
+const toggle = document.getElementById('toggle');
+const sidebar = document.getElementById('sidebar');
+
+// toggle.onclick = function () {
+//   toggle.classList.toggle('active');
+//   sidebar.classList.toggle('active');
+// };
+
+document.onclick = function (e) {
+  if (e.target.id !== 'sidebar' && e.target.id !== 'toggle') {
+    toggle.classList.remove('active');
+    sidebar.classList.remove('active');
+  }
+};
